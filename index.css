@@ -1,0 +1,68 @@
+*{
+    font-size: 1.5rem; 
+  }
+  
+  #setsInc{
+    margin-left: 20px;
+      
+  }
+  
+  #setsInc:hover{
+    cursor: pointer;
+  
+  }
+  
+  .minSec{
+    font-size: 3rem; 
+  }
+  
+  .setsClass{
+    font-size: 2rem; 
+  }
+  
+  #resetSets{
+    font-size: 0.8rem;
+    width: fit-content;
+  }
+  
+  #resetSets:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  button{
+    cursor: pointer;
+  }
+  
+  body{
+    padding-left: 2vw;
+  }
+  
+  #volLabel{
+    font-size: 0.8rem;
+  }
+  
+  #testingEnv{
+    position: absolute;
+    background-color: lightgray;
+    left: 500px;
+    top: 10px;
+    padding: 10px; 
+  }
+  
+  /*  volume and autoRun Section */
+  
+  #autoOnOff{
+    cursor: pointer;
+    border: 1px solid black;
+    outline: none; 
+  }
+
+  #BigReminder{
+      width: 100px;
+  }
+
+  #control p{
+      display: inline;
+      font-size: 30px;
+  }

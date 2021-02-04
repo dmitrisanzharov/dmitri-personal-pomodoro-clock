@@ -1,0 +1,80 @@
+<head></head>
+<body>
+<h1 class='setsClass'>Sets:
+	<span id='sets' class='setsClass'>0</span>
+	<button id='setsInc'>+</button>
+
+
+
+
+
+	<!--  TESTING ENVIRONMENT -->
+
+	<div id='testingEnv' hidden>
+
+		<button id='testButton' >testButton</button>
+		<button id='setsDec'>- sets</button>
+		<button id='setsWorkTo1min'>setsWorkTo1min</button>
+
+	</div>
+</h1>
+
+<p id='resetSets' hidden>reset sets</p>
+
+
+<!--  volume and autoRun section -->
+
+
+
+<span id='volLabel'>Volume: <input type='range' id='volumeControl' value='75'></span>
+
+<hr />
+
+<input type='number' id='BigReminder' 
+placeholder="big reminder sets" value='5' onChange='bigReminderChange()'/>
+<button onClick='muteAlarm()'>Mute alarm</button>
+<span id='control'><p>for revision</p></span>
+
+
+
+
+
+
+
+
+
+<!-- hidden  state section -->
+
+<div hidden>State: <span id='state'>Work</span></div>
+
+
+
+<!-- the actual timer section -->
+
+<hr />
+
+<div id='workDiv'>
+	<h1>Work <span id='workMode' hidden>revising OLD</span></h1>
+	<span id='wm' class='minSec'>25</span><span class='minSec'>:</span><span id='ws' class='minSec'>00</span>
+	<br />
+	<br />
+	<button id='startWork'>start work</button>
+	<input type='button' id='autoOnOff' value='auto-run OFF'> <!-- Run on load = OFF -->
+</div>
+
+	<hr />
+
+	<div id='breakDiv'>
+		<h1>Break</h1>
+		<span id='bm' class='minSec'>5</span><span class='minSec'>:</span><span id='bs' class='minSec'>00</span>
+		<br />
+		<br />
+		<button id='startBreakBtn'>start break</button>
+    </div>
+    
+    <!-- scripts -->
+
+    <link rel='stylesheet' href='index.css' />
+    <script src='index.js'></script>
+
+</body>
