@@ -1,4 +1,6 @@
-<head></head>
+<head>
+	<title>Dmitri Pomodoro Clock</title>
+</head>
 <body>
 <h1 class='setsClass'>Sets:
 	<span id='sets' class='setsClass'>0</span>
@@ -10,7 +12,7 @@
 
 	<!--  TESTING ENVIRONMENT -->
 
-	<div id='testingEnv' hidden>
+	<div id='testingEnv'>
 
 		<button id='testButton' >testButton</button>
 		<button id='setsDec'>- sets</button>
@@ -33,7 +35,7 @@
 <input type='number' id='BigReminder' 
 placeholder="big reminder sets" value='5' onChange='bigReminderChange()'/>
 <button onClick='muteAlarm()'>Mute alarm</button>
-<span id='control'><p>for revision</p></span>
+<span id='control'><p>long break</p></span>
 
 
 
@@ -64,7 +66,7 @@ placeholder="big reminder sets" value='5' onChange='bigReminderChange()'/>
 
 	<hr />
 
-	<div id='breakDiv'>
+	<div id='breakDiv' hidden>
 		<h1>Break</h1>
 		<span id='bm' class='minSec'>5</span><span class='minSec'>:</span><span id='bs' class='minSec'>00</span>
 		<br />

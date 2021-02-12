@@ -18,8 +18,9 @@ let startWorkBtn = document.getElementById('startWork'),
   audioVol = document.getElementById('volumeControl').value / 100,
   volumeControl = document.getElementById('volumeControl'),
   workMode = document.getElementById('workMode'),
-  secondsSpeed = 1000,
-  audioBigAlert = new Audio('https://ds-alarm-sounds.s3-eu-west-1.amazonaws.com/Popular+Alarm+Clock+Sound+Effect.mp3');
+  secondsSpeed = 1,
+  audioBigAlert = new Audio('https://ds-alarm-sounds.s3-eu-west-1.amazonaws.com/Popular+Alarm+Clock+Sound+Effect.mp3'),
+  bigReminder = document.querySelector('#BigReminder');
 
 
 // Auto Run Button and Function
@@ -98,18 +99,20 @@ function runTimer() {
   workDiv.style.backgroundColor = '#fac2be';
   breakDiv.style.backgroundColor = 'white';
 
-  if (wm.innerHTML == 5 && ws.innerHTML == 0) {
-    let fiveMinNot = new Notification('5 minutes left');
-    fiveMinLeftFem.play();
-    fiveMinLeftFem.volume = audioVol;
-  }
+
+  // muted 5 mi
+  // if (wm.innerHTML == 5 && ws.innerHTML == 0) {
+  //   let fiveMinNot = new Notification('5 minutes left');
+  //   fiveMinLeftFem.play();
+  //   fiveMinLeftFem.volume = audioVol;
+  // }
 
 
-  if (wm.innerHTML == 1 && ws.innerHTML == 0) {
+  // if (wm.innerHTML == 1 && ws.innerHTML == 0) {
 
-    oneMinLeftFem.play();
-    oneMinLeftFem.volume = audioVol;
-  }
+  //   oneMinLeftFem.play();
+  //   oneMinLeftFem.volume = audioVol;
+  // }
 
 
   if (wm.innerHTML != 0 && ws.innerHTML == 0) {
@@ -124,15 +127,33 @@ function runTimer() {
 
   if (wm.innerHTML == 0 && ws.innerHTML == 0) {
 
-
+  
     //............  Announcer sound ................. 
 
     //....  changes the WorkState here ...   revision OLD, revision OLD, project work.../
 
-    if(sets.innerHTML == document.querySelector('#BigReminder').value - 1){
+
+
+    // ..............THESE ARE LONG BREAK AUDIO
+
+    console.log(sets.innerHTML);
+    console.log(bigReminder.value);
+    audioBigAlert.volume = 1;
+
+   
+    if(sets.innerHTML == bigReminder.value - 1 
+      || sets.innerHTML == bigReminder.value*2 - 1
+      || sets.innerHTML == bigReminder.value*3 - 1
+      || sets.innerHTML == bigReminder.value*4 - 1
+      || sets.innerHTML == bigReminder.value*5 - 1
+      ){
         
-        audioBigAlert.play();
+        console.log(sets.innerHTML);
+        console.log(bigReminder.value);
+ 
         audioBigAlert.volume = 1;
+        audioBigAlert.play();
+        
     }
 
 
@@ -384,7 +405,7 @@ function bigReminderChange(){
 }
 
 function muteAlarm(){
-    audioBigAlert.muted = true;
+  audioBigAlert.volume = 0;
 }
 
 
