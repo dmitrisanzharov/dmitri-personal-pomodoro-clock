@@ -18,7 +18,7 @@ let startWorkBtn = document.getElementById('startWork'),
   audioVol = document.getElementById('volumeControl').value / 100,
   volumeControl = document.getElementById('volumeControl'),
   workMode = document.getElementById('workMode'),
-  secondsSpeed = 1,
+  secondsSpeed = 1000,
   audioBigAlert = new Audio('https://ds-alarm-sounds.s3-eu-west-1.amazonaws.com/Popular+Alarm+Clock+Sound+Effect.mp3'),
   bigReminder = document.querySelector('#BigReminder');
 
