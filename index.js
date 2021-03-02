@@ -157,23 +157,23 @@ function runTimer() {
     }
 
 
-    if (sets.innerHTML == 14){
+    // if (sets.innerHTML == 14){
 
-      let audio17sets = new Audio('https://dmitri-audio-files.s3-eu-west-1.amazonaws.com/graduations-you-are-the-winner.mp3');
-      audio17sets.play();
-      audio17sets.volume = audioVol;
+    //   let audio17sets = new Audio('https://dmitri-audio-files.s3-eu-west-1.amazonaws.com/graduations-you-are-the-winner.mp3');
+    //   audio17sets.play();
+    //   audio17sets.volume = audioVol;
 
-    } else if (sets.innerHTML <= 13) {  /// this is 5 actually, but have to go -1 cause of code
+    // } else if (sets.innerHTML <= 13) {  /// this is 5 actually, but have to go -1 cause of code
 
-      console.log('sets below 14');
-      randUnrealLow();
+    //   console.log('sets below 14');
+    //   randUnrealLow();
 
-    }
-    else if (sets.innerHTML >= 14 && sets.innerHTML != 14) { /// this is 16 to 20 actually, but have to go -1 cause of code
+    // }
+    // else if (sets.innerHTML >= 14 && sets.innerHTML != 14) { /// this is 16 to 20 actually, but have to go -1 cause of code
 
-      randUnrealHigh();
+    //   randUnrealHigh();
 
-    }
+    // }
 
     // ...........  end of the Anouncer sounds ................ 
 
