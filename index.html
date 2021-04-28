@@ -28,12 +28,12 @@
 
 
 
-<span id='volLabel'>Volume: <input type='range' id='volumeControl' value='75'></span>
+<span id='volLabel'>Volume: <input type='range' id='volumeControl' value='55'></span>
 
 <hr />
 
 <input type='number' id='BigReminder' 
-placeholder="big reminder sets" value='5' onChange='bigReminderChange()'/>
+placeholder="big reminder sets" value='12' onChange='bigReminderChange()'/>
 <button onClick='muteAlarm()'>Mute alarm</button>
 <span id='control'><p>long break</p></span>
 
@@ -61,12 +61,12 @@ placeholder="big reminder sets" value='5' onChange='bigReminderChange()'/>
 	<br />
 	<br />
 	<button id='startWork'>start work</button>
-	<input type='button' id='autoOnOff' value='auto-run OFF'> <!-- Run on load = OFF -->
+	<input type='button' id='autoOnOff' value='auto-run ON'> <!-- Run on load = OFF -->
 </div>
 
 	<hr />
 
-	<div id='breakDiv' hidden>
+	<div id='breakDiv'>
 		<h1>Break</h1>
 		<span id='bm' class='minSec'>5</span><span class='minSec'>:</span><span id='bs' class='minSec'>00</span>
 		<br />

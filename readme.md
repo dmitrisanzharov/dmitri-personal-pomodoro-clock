@@ -2,11 +2,14 @@
 
 
 
+============================================================================================================
 
+date: 28-Apr-2021
 
-
-
-
+>restored Break time
+>uncommented the  chords sound when Work timer hits 0
+>auto-run set to OFF by default (i.e. the onload it is set to ON, so it auto-reverses it)
+>Long break set to 12 ... because this is the target
 
 
 

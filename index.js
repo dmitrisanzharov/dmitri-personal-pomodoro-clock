@@ -194,11 +194,13 @@ function runTimer() {
       wm.innerHTML = 25;
       ws.innerHTML = 00;
 
-            // chord1.play();
-            // chord1.volume = audioVol;
 
-            // setTimeout(() => chord3.play(), 1000);
-            // chord3.volume = audioVol;
+      // This controls, when  work timer hits 0 it will play the audio... 
+            chord1.play();
+            chord1.volume = audioVol;
+
+            setTimeout(() => chord3.play(), 1000);
+            chord3.volume = audioVol;
 
       state.innerHTML = 'Break'
 
