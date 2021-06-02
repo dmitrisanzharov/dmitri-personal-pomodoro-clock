@@ -1,3 +1,9 @@
+date: 02-Jun-2021:
+>Added mini +/- buttons for the work clock for better control
+
+
+============================================================================================================
+
 date: 18-May-2021:
 
 >Changed to 5 sets default

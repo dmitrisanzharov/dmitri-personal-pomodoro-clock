@@ -411,4 +411,16 @@ function muteAlarm(){
 }
 
 
+// Mini  Work buttons  plus minus minuts
+
+document.querySelector('#miniPlus').addEventListener('click', () => {
+  wm.innerHTML++
+})
+
+document.querySelector('#miniMinus').addEventListener('click', () => {
+  wm.innerHTML--
+})
+
+
+
 
