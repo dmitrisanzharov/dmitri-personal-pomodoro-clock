@@ -32,11 +32,13 @@
 
 <hr />
 
+<!-- this is just to hide the  Big Reminder -->
+<div hidden> 
 <input type='number' id='BigReminder' 
-placeholder="big reminder sets" value='14' onChange='bigReminderChange()'/>
+placeholder="big reminder sets" value='1400' onChange='bigReminderChange()'/>
 <button onClick='muteAlarm()'>Mute alarm</button>
 <span id='control'><p>long break</p></span>
-
+</div>
 
 
 
@@ -53,7 +55,6 @@ placeholder="big reminder sets" value='14' onChange='bigReminderChange()'/>
 
 <!-- the actual timer section -->
 
-<hr />
 
 <div id='workDiv'>
 	<h1>Work <span id='workMode' hidden>revising OLD</span></h1>
@@ -61,7 +62,7 @@ placeholder="big reminder sets" value='14' onChange='bigReminderChange()'/>
 	<br />
 	<br />
 	<button id='startWork'>start work</button>
-	<input type='button' id='autoOnOff' value='auto-run OFF'> <!-- Run on load = OFF -->
+	<input type='button' id='autoOnOff' value='auto-run ON'> <!-- Run on load = OFF -->
 
 	<br />
 	<br />

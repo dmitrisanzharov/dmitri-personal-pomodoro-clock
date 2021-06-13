@@ -1,3 +1,11 @@
+date: 13-Jun-2021:
+>changed to  auto-run OFF
+>hide the long break interface and set it to 100
+
+
+============================================================================================================
+
+
 date: 02-Jun-2021:
 >Added mini +/- buttons for the work clock for better control
 
